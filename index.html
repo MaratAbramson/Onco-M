@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!--*META*-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Узнайте риск возникновения онкологического заболевания и получите рекомендации">
+    <meta name="Keywords" content="онкотест, скрининг, онкоскрининг, онко скарининг, oncotest, профилактика рака, тест по онкологии, диспансеризация, при раке, онко, онкология, профилактика, профилактика онкологии"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="MedExSYS LLC"/>
+    <meta name="copyright" content="2019. MedExSYS LLC"/>
+
+    <!--Помогаем Google определить месторасположение, а так же другую контактную информацию.-->
+    <meta property="place:location:latitude" content="широта"/>
+    <meta property="place:location:longitude" content="долгота"/>
+    <meta property="business:contact_data:street_address" content=""/>
+    <meta property="business:contact_data:locality" content="Волгоград"/>
+    <meta property="business:contact_data:postal_code" content="индекс"/>
+    <meta property="business:contact_data:country_name" content="Россия"/>
+    <meta property="business:contact_data:email" content="noffice@medexsys.com"/>
+    <meta property="business:contact_data:phone_number" content="+79991234567"/>
+    <meta property="business:contact_data:website" content="https://www.onco-m.ru/"/>
+
+    <!--Open Graph-->
+    <meta name="og:title" content="{{ title }}"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://www.onco-m.ru/"/>
+    <meta name="og:site_name" content="Onco minus"/>
+    <meta name="og:description" content="Узнайте риск возникновения онкологического заболевания и получите рекомендации"/>
+
+    <meta name="og:email" content="office@medexsys.com"/>
+    <meta name="og:phone_number" content="+79991234567"/>
+
+    <meta name="og:latitude" content="широта"/>
+    <meta name="og:longitude" content="долгота"/>
+    <meta name="og:street-address" content=""/>
+    <meta name="og:locality" content="Волгоград"/>
+    <meta name="og:region" content="Волгоградская область"/>
+    <meta name="og:postal-code" content=""/>
+    <meta name="og:country-name" content="Россия"/>
+
+    <meta property="og:image" content="{% static 'img/logo.svg' %}"/><!-- .svg, .png, .jpg, .WebP -->
+    <meta property="og:image:type" content="image/svg+xml"/><!-- *MIME TYPE* "image/svg+xml", "image/png", "image/jpeg", "image/webp" -->
+    <meta property="og:image:width" content="256"/>
+    <meta property="og:image:height" content="256"/>
+
+    <!--*TITLE*-->
+    <title>{{ title }}</title>
+
+    <!--*FAVICON*-->
+    <link type="image/png" rel="shortcut icon" href="static/img/favicon.png"><!-- .ico, .png, .svg, .WebP -->
+
+    <!--*CSS*-->
+    <!--bootstrap-->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!--main custom-->
+    <link href="static/css/main.css" rel="stylesheet">
+
+    <!--*FONTS*-->
+    <!--*отдельный файл CSS для шрифтов (google  за это снижает баллы)
+        *<link href="../css/fonts.css" rel="stylesheet">
+        *-->
+    
+    <!--*ICONS*-->
+    <!--google material icons-->
+    <!--*(подключение через CDN)
+        *<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        *-->
+    
+    <!--*JAVA SCRIPT*-->
+    <!--jQuery-->
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <!--bootstrap bundle-->
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+	<body>
+        <div class="u-wrapper">
+        <!--NAVBAR-->
+        <header class="u-header navbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <img src="static/img/logo-main.png" alt="Onco-M">
+                </a>
+                <nav class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Онко-тест</a>
+                    <a class="nav-item nav-link" href="#">Диспансеризация</a>
+                    <a class="nav-item nav-link" href="#">Профилактика</a>
+                </nav>
+            </div>
+        </header>
+        <!--NAVBAR END-->
+        <main class="content"><!--CONTENT-->
+        <!--SECTION OFER-->
+        <section class="ofer-background">
+            <div class="ofer">
+                <div class="ofer_content container d-flex flex-column justify-content-between">
+                   <div class="pj-ofer_left-block">
+                       <h3 class="ofer_title text-left">
+                           Проблемы клинической онкологии остаются в центре внимания медиков всего мира из–за постоянного роста заболеваемости злокачественными опухолями и смертности от них
+                       </h3>
+                    </div>
+                    <div class="pj-ofer_right-block d-flex align-self-end">
+                        <h3 class="ofer_title text-right">Ранняя диагностика злокачественных новообразований зависит главным образом от Вас!!!
+                        </h3>
+                    </div>
+                    <div class="pj-ofer_bottom-block d-flex flex-column align-items-center">
+                        <p class="ofer_content_text text-center">
+                            Узнайте риск возникновения онкологического заболевания.<br>Получите рекомендации.
+                        </p>
+                        <p class="ofer_content_text text-center">
+                            Это быстро, бесплатно, удобно
+                        </p>
+                        <a class="btn-standart md-btn-x2 mb-4" href="test.html">
+                            Пройти тест
+                        </a>
+                        <small class="pj-anchor-prevent text-white mt-5 text-uppercase">профилактика</small>
+                        <div class="pj-arrow-cover">
+                            <img src="static/img/down-arrow.svg" height="32" width="32" class="pj-arrowd">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!--END SECTION OFER-->
+        <!--SECTION TEST-->
+        <section class="test-enter__background vh-100">
+            <div class="test-enter h-100">
+                <div class="test-enter_content container d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="test-enter_title text-center">
+                        Пройдите тест
+                    </h3>
+                    <p class="test-enter_content_text text-center">
+                        Узнайте риск возникновения онкологического заболевания.<br>Получите рекомендации.
+                    </p>
+                    <a class="btn btn-standart md-btn-x2" href="test.html" role="button">
+                        Пройти тест
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION TEST-->
+        <!--SECTION INFO-->
+        <section class="info vh-100">
+            <div class="info-acryl h-100">
+                <div class="info_content container d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="info_content-title text-center">
+                        Узнайте больше<br>о профилактике онкологии
+                    </h3>
+                    <p class="info_content-text text-center">
+                        перейти к профилактике
+                    </p>
+                    <a class="btn btn-standart md-btn-x2" href="test.html" role="button">
+                    Профилактика
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION INFO-->
+        <!--SECTION DOCS-->
+        <section class="docs">
+            <div class="docs_content container">
+                <div class="row">
+                    <a class="docs-item col-lg-4 d-flex flex-column justify-content-center align-items-center" href="#"><img class="docs_icon" src="static/img/guide-ico.svg" alt="logo image">
+                        <span class="docs_item-text d-flex">                     
+                            Инструкции
+                        </span>
+                    </a>
+                    <a class="docs-item col-lg-4 d-flex flex-column justify-content-center align-items-center" href="#"><img class="docs_icon" src="static/img/t-accept-ico.svg" alt="logo image">
+                        <span class="docs_item-text d-flex">                     
+                            Правила участия
+                        </span>
+                    </a>
+                    <a class="docs-item col-lg-4 d-flex flex-column justify-content-center align-items-center" href="#"><img class="docs_icon" src="static/img/info-ico.svg" alt="logo image">
+                        <span class="docs_item-text d-flex">                     
+                            Дополнительная информация
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--END SECTION DOCS-->
+        </main><!--END CONTENT-->
+        <!--FOOTER-->
+        <footer class="u-footer flex-column">
+            <section class="footer_main d-flex justify-content-around">
+                <div class="footer_main_item d-flex flex-column">
+                    <h5 class="footer_main_header">
+                        Ссылки
+                    </h5>
+                    <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
+                        ВолгГМУ
+                    </a>
+                    <a class="footer_main_link" href="https://www.rosminzdrav.ru/">
+                        Минздрав РФ
+                    </a>
+                    <a class="footer_main_link" href="http://volgazdrav.ru/">
+                        Минздрав по г. Вогограду
+                    </a>
+                    <a class="footer_main_link" href="https://vk.com/poslushaite_doktor">
+                        "Послушайте, доктор!"
+                    </a>
+                </div>
+                <div class="footer_main_item d-flex flex-column">
+                    <h5 class="footer_main_header">
+                        Информация
+                    </h5>
+                    <a class="footer_main_link" href="license.html">
+                        Пользовательское соглашение
+                    </a>
+                </div>
+                <div class="footer_main_item d-flex flex-column">
+                    <h5 class="footer_main_header">
+                        Copyright
+                    </h5>
+                    <p class="footer_main_text">2018-2019.
+                        <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
+                        ВолгГМУ
+                        </a>, <a class="footer_main_link" href="https://medexsys.com">
+                        ООО "МЕДЭКСИС"
+                        </a>
+                    </p>
+                </div>
+            </section>
+            <section class="footer_copyright d-flex justify-content-between">
+                <a class="footer__copyright-item pl-3" href="https://medexsys.com">
+                    Разработано в <b>MedExSYS</b>
+                </a>
+                <a class="footer__copyright-item pr-3" href="https://thenounproject.com/">
+                    Icons by The <b>Noun Project</b>
+                </a>
+            </section>
+        </footer>
+        <!--END FOOTER-->
+        </div><!--END WRAPPER-->
+    </body>
+</html>
