@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container d-flex flex-column justify-content-between">
+  <div class="d-flex flex-column mt-4 e-text--dark-gray">
+    <h2 class="u-title h3">
+      Диспансеризация представляет собой комплекс мероприятий, включающий в себя профилактический медицинский осмотр и дополнительные методы обследований, в том числе онкоскрининг.
+    </h2>
+    <hr class="border-bottom w-100">
+    <h3 class="u-title text-right w-75 align-self-end">
+      Приказ Министерства здравоохранения Российской Федерации от 13.03.2019 г. N 124н.
+    </h3>
+  </div>
+  <p class="text-center text-dark lead mt-4">
+    подробнее о диспансеризации
+  </p>
+  <div class="btn-cover d-flex justify-content-center flex-wrap">
+    <a class="btn-standart md-btn-lg mb-4 mx-2" href="{{ url_for('clinical_examination_man_view') }}">
+      у мужчин
+    </a>
+    <a class="btn-standart md-btn-lg mb-4 mx-2" href="{{ url_for('clinical_examination_woman_view') }}">
+      у женщин
+    </a>
+  </div>
+</div>
+{% endblock content %}

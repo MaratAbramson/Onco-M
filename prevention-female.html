@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!--*META*-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Узнайте риск возникновения онкологического заболевания и получите рекомендации">
+    <meta name="Keywords" content="онкотест, скрининг, онкоскрининг, онко скарининг, oncotest, профилактика рака, тест по онкологии, диспансеризация, при раке, онко, онкология, профилактика, профилактика онкологии"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="MedExSYS LLC"/>
+    <meta name="copyright" content="2019. MedExSYS LLC"/>
+
+    <!--Помогаем Google определить месторасположение, а так же другую контактную информацию.-->
+    <meta property="place:location:latitude" content="широта"/>
+    <meta property="place:location:longitude" content="долгота"/>
+    <meta property="business:contact_data:street_address" content=""/>
+    <meta property="business:contact_data:locality" content="Волгоград"/>
+    <meta property="business:contact_data:postal_code" content="индекс"/>
+    <meta property="business:contact_data:country_name" content="Россия"/>
+    <meta property="business:contact_data:email" content="noffice@medexsys.com"/>
+    <meta property="business:contact_data:phone_number" content="+79991234567"/>
+    <meta property="business:contact_data:website" content="https://www.onco-m.ru/"/>
+
+    <!--Open Graph-->
+    <meta name="og:title" content="{{ title }}"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://www.onco-m.ru/"/>
+    <meta name="og:site_name" content="Onco minus"/>
+    <meta name="og:description" content="Узнайте риск возникновения онкологического заболевания и получите рекомендации"/>
+
+    <meta name="og:email" content="office@medexsys.com"/>
+    <meta name="og:phone_number" content="+79991234567"/>
+
+    <meta name="og:latitude" content="широта"/>
+    <meta name="og:longitude" content="долгота"/>
+    <meta name="og:street-address" content=""/>
+    <meta name="og:locality" content="Волгоград"/>
+    <meta name="og:region" content="Волгоградская область"/>
+    <meta name="og:postal-code" content=""/>
+    <meta name="og:country-name" content="Россия"/>
+
+    <meta property="og:image" content="{% static 'img/logo.svg' %}"/><!-- .svg, .png, .jpg, .WebP -->
+    <meta property="og:image:type" content="image/svg+xml"/><!-- *MIME TYPE* "image/svg+xml", "image/png", "image/jpeg", "image/webp" -->
+    <meta property="og:image:width" content="256"/>
+    <meta property="og:image:height" content="256"/>
+
+    <!--*TITLE*-->
+    <title>{{ title }}</title>
+
+    <!--*FAVICON*-->
+    <link type="image/png" rel="shortcut icon" href="static/img/favicon.png"><!-- .ico, .png, .svg, .WebP -->
+
+    <!--*FONTS*-->
+    <!--*отдельный файл CSS для шрифтов (google  за это снижает баллы)
+        *<link href="../css/fonts.css" rel="stylesheet">
+        *-->
+    
+    <!--*ICONS*-->
+    <!--google material icons-->
+    <!--*(подключение через CDN)
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+        
+    <!--*CSS*-->
+    <!--bootstrap-->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!--main custom-->
+    <link href="static/css/main.css" rel="stylesheet">
+
+    <!--*JAVA SCRIPT*-->
+    <!--jQuery-->
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <!--bootstrap bundle-->
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+  <body>
+    <div class="u-wrapper">
+      <header class="u-header md-shadow-bottom align-items-center sticky-top bg-light">
+        <nav class="u-navbar navbar navbar-sm navbar-expand-lg navbar-light bg-light w-100 container">
+          <a class="navbar-brand m-0" href="/">
+            <img src="static/img/Onco-M_Full-logo.png" height="32" alt="Onco-M">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="u-nav-list navbar-nav">
+              <li class="nav-item">
+                <a class="u-nav-list_link" href="#test">Онко-тест</a>
+              </li>
+              <li class="nav-item">
+                <a class="u-nav-list_link" href="#inspect">Диспансеризация</a>
+              </li>
+              <li class="nav-item">
+                <a class="u-nav-list_link" href="#prevention">Профилактика</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="u-main">
+
+        <div class="u-content container py-3 my-3">
+          <!-- PAGE TITLE -->
+          <div class="u-content_title-box md-border-primary mb-3">
+            <h2 class="u-content_title md-text-secondary h3">
+              Диспансеризация ( Женщины )
+            </h2>
+          </div>
+          <!-- CONTENT -->
+          <div class="u-content_body u-content_table">
+          
+          <table class="u-table table table-hover table-striped e-text--dark-gray" cellspacing="0" cellpadding="0">
+            <thead class="u-table_header md-bg-primary text-light">
+            <tr>
+                <th scope="col">Возраст</th>
+                <th scope="col">№</th>
+                <th scope="col">Обязательные исследования в рамках диспансеризации</th>
+                
+               <th scope="col">Частота проведения исследования</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="u-table_sub-title text-center md-bg-secondary" colspan="4">ЭТАП 1</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>1</td>
+                <td>Осмотр врачом-терапевтом</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>2</td>
+                <td>Опрос (анкетирование)</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>3</td>
+                <td>
+                  <div>Антропометрия индекса массы тела (рост, вес, окружность талии)</div>
+                </td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>4</td>
+                <td>Измерение АД</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>5</td>
+                <td>Анализ крови на общий холестерин</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>6</td>
+                <td>Анализ крови на глюкозу</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>7</td>
+                <td>Флюорография или рентгенография легких</td>
+                <td>1 раз в 2 года</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>8</td>
+                <td>Измерение внтуриглазного давления</td>
+                <td>При первом прохождении диспансеризации, далее ежегодно с 40 лет</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>9</td>
+                <td>ЭКГ</td>
+                <td>При первом прохождении диспансеризации, далее ежегодно с 35 лет</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>10</td>
+                <td>
+                  <div>Определение отностиельного сердечнососудистого индекса</div>
+                </td>
+                <td>с 18 лет до 39 лет при прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>11</td>
+                <td>Определение абсолютного сердечнососудистого индекса</td>
+                <td>с 40 лет до 64 лет при прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>12</td>
+                <td>Определение рисков хронических болезней</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>13</td>
+                <td>Осмотр фильдшером (акушеркой или врачом-гинекологом)</td>
+                <td>с 18 лет до 39 лет при прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>14</td>
+                <td>Осмотр врачом-терапевтом</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                <td class="u-table_sub-title text-center md-bg-secondary" colspan="4">ЭТАП 2</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>1</td>
+                <td>По назначению врача-терапевта консультации специалистов (невропатолог, оториноларинголог, офтальмолог, хирург, уролог, проктолог, акушер-гинеколог)</td>
+                <td>По назначению после 1 этапа</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>2</td>
+                <td>Осмотр врачом-терапевтом по результатам 2 этапа</td>
+                <td>По назначению после 1 этапа</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>3</td>
+                <td>Дополнительные исследования:</td>
+                <td>
+                  <div>По назначению после дополнительного осмотра врачами узкого профиля на 2 этапе</div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>3.1</td>
+                <td>Рентгенография легких, КТ легких, спирометрия</td>
+                <td>
+                  <div>По назначению после дополнительного осмотра врачами узкого профиля на 2 этапе</div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>3.2</td>
+                <td>ЭФГДС</td>
+                <td>
+                  <div>По назначению после дополнительного осмотра врачами узкого профиля на 2 этапе</div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>3.3</td>
+                <td>Ректороманоскопия</td>
+                <td>
+                  <div>По назначению после дополнительного осмотра врачами узкого профиля на 2 этапе</div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>3.4</td>
+                <td>Дуплексное сканирование брахиоцевальных артерий</td>
+                <td>
+                  <div>По назначению после дополнительного осмотра врачами узкого профиля на 2 этапе</div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="u-table_sub-title text-center md-bg-secondary" colspan="4">ЭТАП 3 (Обязательный онкоскрининг при диспансеризации)</td>
+              </tr>
+              <tr>
+                <td>18+</td>
+                <td>1</td>
+                <td>Осмотр гинекологом</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+              <tr>
+                <td>18 - 64</td>
+                <td>2</td>
+                <td>Мазок на цитологию (ПАП - тест)</td>
+                <td>1 раз в 3 года</td>
+              </tr>
+              <tr>
+                <td>40 - 75</td>
+                <td>3</td>
+                <td>Маммография</td>
+                <td>1 раз в 2 года</td>
+              </tr>
+              <tr>
+                <td>40 - 64</td>
+                <td>4</td>
+                <td>Кал на скрытую кровь</td>
+                <td>1 раз в 2 года</td>
+              </tr>
+              <tr>
+                <td>65 - 75</td>
+                <td>5</td>
+                <td>Кал на скрытую кровь</td>
+                <td>1 раз в год</td>
+              </tr>
+              <tr>
+                <td>45+</td>
+                <td>6</td>
+                <td>Гастроскопия</td>
+                <td>1 раз, далее по показаниям</td>
+              </tr>
+              <tr>
+                <td>18+</td>
+                <td>7</td>
+                <td>Визуальный осмотр и пальпация</td>
+                <td>При прохождении диспансеризации</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          </div>
+        </div>
+      </main>
+
+      <footer class="u-footer">
+        <section class="footer_main d-flex justify-content-around">
+          <div class="footer_main_item d-flex flex-column">
+            <h5 class="footer_main_header">
+              Ссылки
+            </h5>
+            <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
+              ВолгГМУ
+            </a>
+            <a class="footer_main_link" href="https://www.rosminzdrav.ru/">
+              Минздрав РФ
+            </a>
+            <a class="footer_main_link" href="http://volgazdrav.ru/">
+              Минздрав по г. Вогограду
+            </a>
+            <a class="footer_main_link" href="https://vk.com/poslushaite_doktor">
+              "Послушайте, доктор!"
+            </a>
+          </div>
+          <div class="footer_main_item d-flex flex-column">
+            <h5 class="footer_main_header">
+              Информация
+            </h5>
+            <a class="footer_main_link" href="license.html">
+              Пользовательское соглашение
+            </a>
+          </div>
+          <div class="footer_main_item d-flex flex-column">
+            <h5 class="footer_main_header">
+              Copyright
+            </h5>
+            <p class="footer_main_text">2018-2019.
+              <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
+                ВолгГМУ
+              </a>, <a class="footer_main_link" href="https://medexsys.com">
+                ООО "МЕДЭКСИС"
+              </a>
+            </p>
+          </div>
+        </section>
+        <section class="footer_copyright d-flex justify-content-end">
+          <a class="footer__copyright-item px-3" href="https://medexsys.com">
+            Разработано в <b>MedExSYS</b>
+          </a>
+        </section>
+      </footer>
+
+    </div><!-- /WRAPPER -->
+
+    <!-- SCRIPTS -->
+    <script src="static/js/main.js"></script>
+
+    <script type="text/javascript">
+      //плавная прокрутка по якорям
+      $(function() {
+        $("a[href^='#']").click(function() {
+          var _href = $(this).attr("href");
+          $("html, body").animate({
+            scrollTop: $(_href).offset().top + "px"
+          });
+          return false;
+        });
+      });
+    </script>
+
+  </body>
+</html>

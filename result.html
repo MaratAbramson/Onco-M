@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <!--*META*-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Узнайте риск возникновения онкологического заболевания и получите рекомендации">
+  <meta name="Keywords" content="онкотест, скрининг, онкоскрининг, онко скарининг, oncotest, профилактика рака, тест по онкологии, диспансеризация, при раке, онко, онкология, профилактика, профилактика онкологии" />
+  <meta name="description" content="" />
+  <meta name="author" content="MedExSYS LLC" />
+  <meta name="copyright" content="2019. MedExSYS LLC" />
+
+  <!--Помогаем Google определить месторасположение, а так же другую контактную информацию.-->
+  <meta property="place:location:latitude" content="широта" />
+  <meta property="place:location:longitude" content="долгота" />
+  <meta property="business:contact_data:street_address" content="" />
+  <meta property="business:contact_data:locality" content="Волгоград" />
+  <meta property="business:contact_data:postal_code" content="индекс" />
+  <meta property="business:contact_data:country_name" content="Россия" />
+  <meta property="business:contact_data:email" content="noffice@medexsys.com" />
+  <meta property="business:contact_data:phone_number" content="+79991234567" />
+  <meta property="business:contact_data:website" content="https://www.onco-m.ru/" />
+
+  <!--Open Graph-->
+  <meta name="og:title" content="{{ title }}" />
+  <meta name="og:type" content="website" />
+  <meta name="og:url" content="https://www.onco-m.ru/" />
+  <meta name="og:site_name" content="Onco minus" />
+  <meta name="og:description" content="Узнайте риск возникновения онкологического заболевания и получите рекомендации" />
+
+  <meta name="og:email" content="office@medexsys.com" />
+  <meta name="og:phone_number" content="+79991234567" />
+
+  <meta name="og:latitude" content="широта" />
+  <meta name="og:longitude" content="долгота" />
+  <meta name="og:street-address" content="" />
+  <meta name="og:locality" content="Волгоград" />
+  <meta name="og:region" content="Волгоградская область" />
+  <meta name="og:postal-code" content="" />
+  <meta name="og:country-name" content="Россия" />
+
+  <meta property="og:image" content="{% static 'img/logo.svg' %}" /><!-- .svg, .png, .jpg, .WebP -->
+  <meta property="og:image:type" content="image/svg+xml" /><!-- *MIME TYPE* "image/svg+xml", "image/png", "image/jpeg", "image/webp" -->
+  <meta property="og:image:width" content="256" />
+  <meta property="og:image:height" content="256" />
+
+  <!--*TITLE*-->
+  <title>{{ title }}</title>
+
+  <!--*FAVICON*-->
+  <link type="image/png" rel="shortcut icon" href="static/img/favicon.png"><!-- .ico, .png, .svg, .WebP -->
+
+  <!--*FONTS*-->
+  <!--*отдельный файл CSS для шрифтов (google  за это снижает баллы)
+        *<link href="../css/fonts.css" rel="stylesheet">
+        *-->
+
+  <!--*ICONS*-->
+  <!--google material icons-->
+  <!--*отдельный файл CSS для шрифтов (google  за это снижает баллы)
+        *<link href="../css/fonts.css" rel="stylesheet">
+        *-->
+
+  <!--*CSS*-->
+  <!--bootstrap-->
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <!--main custom-->
+  <link href="static/css/main.css" rel="stylesheet">
+
+  <!--*JAVA SCRIPT*-->
+  <!--jQuery-->
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <!--bootstrap bundle-->
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="u-wrapper">
+    <header class="u-header md-shadow-bottom align-items-center sticky-top bg-light">
+      <nav class="u-navbar navbar navbar-sm navbar-expand-lg navbar-light bg-light w-100 container">
+        <a class="navbar-brand m-0" href="/">
+          <img src="static/img/Onco-M_Full-logo.png" height="32" alt="Onco-M">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="u-nav-list navbar-nav">
+            <li class="nav-item">
+              <a class="u-nav-list_link" href="#test">Онко-тест</a>
+            </li>
+            <li class="nav-item">
+              <a class="u-nav-list_link" href="#inspect">Диспансеризация</a>
+            </li>
+            <li class="nav-item">
+              <a class="u-nav-list_link" href="#prevention">Профилактика</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="u-main">
+      <div class="u-content container py-3 my-3">
+        <!-- PAGE TITLE -->
+        <div class="u-content_title-box md-border-primary mb-3">
+          <h2 class="u-content_title md-text-secondary h3">
+            Результаты
+          </h2>
+        </div>
+        <!-- CONTENT -->
+        <div class="u-content_body px-3">
+          
+          <h3 class="u-content_header h4 e-text--dark-gray py-3">
+            У Вас возможно развитие следующих процессов:
+          </h3>
+          
+          <ol class="u-content_list e-text--dark-gray">
+            <li class="u-content_list-item lead my-2" id="risk-1">
+              Рак пищевода
+            </li>
+
+              <div class="u-accordion accordion card" id="factors-risk-1">
+                <button id="factors-header_risk-1" class="text-left u-accordion_header h6 m-0 p-1 collapsed" type="button" data-toggle="collapse" data-target="#factors-list_risk-1" aria-expanded="true" aria-controls="factors-list_risk-1">
+                  <span class="material-icons align-middle">keyboard_arrow_down</span>
+                  Факторы повышающие риск онкологического заболевания
+                </button>
+                <ol id="factors-list_risk-1" class="u-accordion_content-list collapse md-text--dark-gray" aria-labelledby="factors-header_risk-2" data-parent="#factors-risk-1">
+                  <li class="u-accordion_content-item" id="factor-id1">
+                    Клинический осмотр
+                  </li>
+                  <li class="u-accordion_content-item" id="factor-id2">
+                    Цитологическое и гистологическое исследования
+                  </li>
+                  <li class="u-accordion_content-item" id="factor-id3">
+                    Консультация онколога
+                  </li>
+                  <li class="u-accordion_content-item" id="factor-id4">
+                    ФГС
+                  </li>
+                </ol>
+              </div>
+              <div class="u-accordion accordion card" id="recom_risk-1">
+                <button id="recom-header_risk-1" class="text-left u-accordion_header h6 m-0 p-1 collapsed" type="button" data-toggle="collapse" data-target="#recom-list_risk-1" aria-expanded="true" aria-controls="recom-list_risk-1">
+                  <span class="material-icons align-middle">keyboard_arrow_down</span>
+                  Рекомендации необходимые для проведения обследования
+                </button>
+                <ol id="recom-list_risk-1" class="u-accordion_content-list collapse md-text--dark-gray" aria-labelledby="recom-header_risk-1" data-parent="#recom_risk-1">
+                  <li class="u-accordion_content-item" id="recom-id1">
+                    Клинический осмотр
+                  </li>
+                  <li class="u-accordion_content-item" id="recom-id2">
+                    Цитологическое и гистологическое исследования
+                  </li>
+                  <li class="u-accordion_content-item" id="recom-id3">
+                    Консультация онколога
+                  </li>
+                  <li class="u-accordion_content-item" id="recom-id4">
+                    ФГС
+                  </li>
+                </ol>
+              </div>
+            <!--end list recomendation-->
+
+            <li class="u-content_list-item lead my-2" id="risk-2">
+              Рак желудка
+            </li>
+            <div class="u-accordion accordion card" id="factors-risk-2">
+                <button id="factors-header_risk-2" class="text-left u-accordion_header h6 m-0 p-1 collapsed" type="button" data-toggle="collapse" data-target="#factors-list_risk-2" aria-expanded="true" aria-controls="factors-list_risk-2">
+                  <span class="material-icons align-middle">keyboard_arrow_down</span>
+                  Факторы повышающие риск онкологического заболевания
+                </button>
+                <ol id="factors-list_risk-2" class="u-accordion_content-list collapse md-text--dark-gray" aria-labelledby="factors-header_risk-2" data-parent="#factors-risk-2">
+                  <li class="u-accordion_content-item" id="factor-id1">
+                    Клинический осмотр
+                  </li>
+                  <li class="u-accordion_content-item" id="factor-id2">
+                    Цитологическое и гистологическое исследования
+                  </li>
+                  <li class="u-accordion_content-item" id="factor-id3">
+                    Консультация онколога
+                  </li>
+                  <li class="u-accordion_content-item" id="factor-id4">
+                    ФГС
+                  </li>
+                </ol>
+              </div>
+              <div class="u-accordion accordion card" id="recom_risk-2">
+                <button id="recom-header_risk-2" class="text-left u-accordion_header h6 m-0 p-1 collapsed" type="button" data-toggle="collapse" data-target="#recom-list_risk-2" aria-expanded="true" aria-controls="recom-list_risk-2">
+                  <span class="material-icons align-middle">keyboard_arrow_down</span>
+                  Рекомендации необходимые для проведения обследования
+                </button>
+                <ol id="recom-list_risk-2" class="u-accordion_content-list collapse md-text--dark-gray" aria-labelledby="recom-header_risk-2" data-parent="#recom_risk-2">
+                  <li class="u-accordion_content-item" id="recom-id1">
+                    Клинический осмотр
+                  </li>
+                  <li class="u-accordion_content-item" id="recom-id2">
+                    Цитологическое и гистологическое исследования
+                  </li>
+                  <li class="u-accordion_content-item" id="recom-id3">
+                    Консультация онколога
+                  </li>
+                  <li class="u-accordion_content-item" id="recom-id4">
+                    ФГС
+                  </li>
+                </ol>
+              </div>
+            <!--end list recomendation-->
+          </ol>
+          <!--end list risk-->
+          <a class="md-link-secondary lead ml-3" href="info.html">Ознакомьтесь с дополнительной информацией</a>
+        </div>
+        
+        
+        <!-- modal -->
+        <div class="modal fade" id="modal-name_result-alert" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title md-text-primary h5">Важно!</h2>
+                <button type="button" class="close md-link-secondary" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="md-text-secondary">
+                  Результаты теста носят исключительно информационный характер, для постановки диагноза обратитесь к врачу.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-standart" data-dismiss="modal">Понятно</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /modal -->
+        
+      </div>
+      <!--END SECTION FINISH-->
+
+    </main>
+
+    <footer class="u-footer">
+      <section class="footer_main d-flex justify-content-around">
+        <div class="footer_main_item d-flex flex-column">
+          <h5 class="footer_main_header">
+            Ссылки
+          </h5>
+          <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
+            ВолгГМУ
+          </a>
+          <a class="footer_main_link" href="https://www.rosminzdrav.ru/">
+            Минздрав РФ
+          </a>
+          <a class="footer_main_link" href="http://volgazdrav.ru/">
+            Минздрав по г. Вогограду
+          </a>
+          <a class="footer_main_link" href="https://vk.com/poslushaite_doktor">
+            "Послушайте, доктор!"
+          </a>
+        </div>
+        <div class="footer_main_item d-flex flex-column">
+          <h5 class="footer_main_header">
+            Информация
+          </h5>
+          <a class="footer_main_link" href="license.html">
+            Пользовательское соглашение
+          </a>
+        </div>
+        <div class="footer_main_item d-flex flex-column">
+          <h5 class="footer_main_header">
+            Copyright
+          </h5>
+          <p class="footer_main_text">2018-2019.
+            <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
+              ВолгГМУ
+            </a>, <a class="footer_main_link" href="https://medexsys.com">
+              ООО "МЕДЭКСИС"
+            </a>
+          </p>
+        </div>
+      </section>
+      <section class="footer_copyright d-flex justify-content-end">
+        <a class="footer__copyright-item px-3" href="https://medexsys.com">
+          Разработано в <b>MedExSYS</b>
+        </a>
+      </section>
+    </footer>
+
+  </div><!-- /WRAPPER -->
+</body>
+
+</html>
