@@ -72,9 +72,9 @@ html {
   font-style: normal;
   font-weight: 300;
   src: local('Rubik Light'), local('Rubik-Light'),
-    url('/static/fonts/rubik-v8-latin_cyrillic-300.woff2') format('woff2'),
+    url('../fonts/rubik-v8-latin_cyrillic-300.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/static/fonts/rubik-v8-latin_cyrillic-300.woff') format('woff');
+    url('../fonts/rubik-v8-latin_cyrillic-300.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -83,9 +83,9 @@ html {
   font-style: normal;
   font-weight: 400;
   src: local('Rubik'), local('Rubik-Regular'),
-    url('/static/fonts/rubik-v8-latin_cyrillic-regular.woff2') format('woff2'),
+    url('../fonts/rubik-v8-latin_cyrillic-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/static/fonts/rubik-v8-latin_cyrillic-regular.woff') format('woff');
+    url('../fonts/rubik-v8-latin_cyrillic-regular.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -94,9 +94,9 @@ html {
   font-style: normal;
   font-weight: 500;
   src: local('Rubik Medium'), local('Rubik-Medium'),
-    url('/static/fonts/rubik-v8-latin_cyrillic-500.woff2') format('woff2'),
+    url('../fonts/rubik-v8-latin_cyrillic-500.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/static/fonts/rubik-v8-latin_cyrillic-500.woff') format('woff');
+    url('../fonts/rubik-v8-latin_cyrillic-500.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -111,8 +111,8 @@ html {
   font-weight: 400;
   src: local('Material Icons'),
     local('MaterialIcons-Regular'),
-    url('/static/fonts/MaterialIcons-Regular.woff2') format('woff2'),
-    url('/static/fonts/MaterialIcons-Regular.woff') format('woff');
+    url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../fonts/MaterialIcons-Regular.woff') format('woff');
 }
 
 .material-icons {
