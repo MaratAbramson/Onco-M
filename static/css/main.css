@@ -326,7 +326,7 @@ body {
 
 .bg-intro {
   position: relative;
-  background-image: url(/static/img/ofer-ptrn.svg);
+  background-image: url(../img/ofer-ptrn.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -396,7 +396,7 @@ body {
 
 .bg-test {
   position: relative;
-  background-image: url(/static/img/pattern.svg);
+  background-image: url(../img/pattern.svg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -405,7 +405,7 @@ body {
 
 .bg-inspect {
   position: relative;
-  background-image: url(/static/img/info-ptrn.svg);
+  background-image: url(../img/info-ptrn.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -416,7 +416,7 @@ body {
   position: relative;
   background-position: center;
 /*
-  background-image: url(/static/img/ofer-ptrn.svg);
+  background-image: url(../img/ofer-ptrn.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size:auto;
