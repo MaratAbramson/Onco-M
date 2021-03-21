@@ -113,11 +113,11 @@
         </div>
         <!-- CONTENT -->
         <div class="u-content_body px-3">
-          
+
           <h3 class="u-content_header h4 e-text--dark-gray py-3">
             У Вас возможно развитие следующих процессов:
           </h3>
-          
+
           <ol class="u-content_list e-text--dark-gray">
             <li class="u-content_list-item lead my-2" id="risk-1">
               Рак пищевода
@@ -213,8 +213,8 @@
           <!--end list risk-->
           <a class="md-link-secondary lead ml-3" href="info.html">Ознакомьтесь с дополнительной информацией</a>
         </div>
-        
-        
+
+
         <!-- modal -->
         <div class="modal fade" id="modal-name_result-alert" tabindex="-1" role="dialog" aria-labelledby="Modal" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -237,60 +237,53 @@
           </div>
         </div>
         <!-- /modal -->
-        
+
       </div>
       <!--END SECTION FINISH-->
 
     </main>
 
     <footer class="u-footer">
-      <section class="footer_main d-flex justify-content-around">
+      <div class="footer_main d-flex justify-content-between container">
         <div class="footer_main_item d-flex flex-column">
-          <h5 class="footer_main_header">
-            Ссылки
-          </h5>
-          <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
-            ВолгГМУ
-          </a>
-          <a class="footer_main_link" href="https://www.rosminzdrav.ru/">
-            Минздрав РФ
-          </a>
-          <a class="footer_main_link" href="http://volgazdrav.ru/">
-            Минздрав по г. Вогограду
-          </a>
-          <a class="footer_main_link" href="https://vk.com/poslushaite_doktor">
-            "Послушайте, доктор!"
-          </a>
-        </div>
-        <div class="footer_main_item d-flex flex-column">
-          <h5 class="footer_main_header">
+          <h2 class="footer_main_header h5">
             Информация
-          </h5>
-          <a class="footer_main_link" href="license.html">
+          </h2>
+          <a class="footer_main_link" href="#">
             Пользовательское соглашение
           </a>
         </div>
         <div class="footer_main_item d-flex flex-column">
-          <h5 class="footer_main_header">
+          <h2 class="footer_main_header h5">
             Copyright
-          </h5>
+          </h2>
           <p class="footer_main_text">2018-2019.
-            <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
+            <a class="footer_main_link" href="https://www.volgmed.ru/ru/" target="_blank">
               ВолгГМУ
-            </a>, <a class="footer_main_link" href="https://medexsys.com">
-              ООО "МЕДЭКСИС"
-            </a>
+            </a>, <a class="footer_main_link" href="https://medexsys.com" target="_blank">ООО "МЕДЭКСИС"</a>
           </p>
         </div>
-      </section>
-      <section class="footer_copyright d-flex justify-content-end">
-        <a class="footer__copyright-item px-3" href="https://medexsys.com">
-          Разработано в <b>MedExSYS</b>
-        </a>
-      </section>
+      </div>
     </footer>
 
   </div><!-- /WRAPPER -->
+
+  <!-- SCRIPTS -->
+  <script src="static/js/main.js"></script>
+
+  <script type="text/javascript">
+    //плавная прокрутка по якорям
+    $(function() {
+      $("a[href^='#']").click(function() {
+        var _href = $(this).attr("href");
+        $("html, body").animate({
+          scrollTop: $(_href).offset().top + "px"
+        });
+        return false;
+      });
+    });
+  </script>
+
 </body>
 
 </html>

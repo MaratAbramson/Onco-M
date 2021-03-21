@@ -196,6 +196,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
+  background-color: hsl(174, 55%, 35%);
 }
 
 /*- BASE STRUCTURE } -*/
@@ -218,9 +219,9 @@ body {
 }
 
 .u-nav-list_link {
-  color: #0BAC8B;
+  color: hsl(168, 88%, 30%);
   margin-left: 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0;
@@ -234,7 +235,7 @@ body {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #0BAC8B;
+  background-color: hsl(168, 88%, 35%);
   transition: .2s;
   transform: scaleX(0);
 }
@@ -251,7 +252,6 @@ body {
 /* NAVBAR } */
 /* FOOTER { */
 .footer_main {
-  background-color: #25887E;
   padding: 30px;
 }
 
@@ -342,8 +342,8 @@ body {
   margin: auto auto;
   border-radius: 50%;
   display: block;
-  height: 10vmax;
-  width: 10vmax;
+  height: 5vmax;
+  width: 5vmax;
   box-shadow:rgba(247, 248, 252, 0.3) 10px 0px 40px 0px inset, rgba(247, 225, 239, 0.3) -10px 0px 20px 0px inset, rgba(195, 197, 234, 0.3) -40px 10px 100px 0px inset;
   animation: movement 40s ease-in-out infinite both;
   pointer-events: none;
@@ -358,8 +358,8 @@ body {
   left: 0;
   margin: auto auto;
   display: block;
-  height: 40vmax;
-  width: 40vmax;
+  height: 30vmax;
+  width: 30vmax;
   box-shadow:rgba(247, 248, 252, 0.3) 10px 0px 40px 0px inset, rgba(247, 225, 239, 0.3) -10px 0px 20px 0px inset, rgba(195, 197, 234, 0.3) -40px 10px 100px 0px inset;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -425,8 +425,8 @@ body {
 }
 .bg-test::before, .bg-prevention::before {
   content: "";
-  width: 60vmax;
-  height: 60vmax;
+  width: 40vmax;
+  height: 40vmax;
   position: absolute;
   top: 0;
   right: 0;
@@ -434,7 +434,7 @@ body {
   left: 0;
   margin: auto auto;
   transform-origin: center;
-  background: rgba(45, 181, 168, 0.1);
+  background: hsla(175, 75%, 50%, 0.1);
   border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
   pointer-events: none;
   animation: morph 25s linear infinite alternate, spin 30s linear infinite;
@@ -442,8 +442,8 @@ body {
 
 .bg-test::after, .bg-prevention::after {
   content: "";
-  width: 55vmax;
-  height: 55vmax;
+  width: 35vmax;
+  height: 35vmax;
   position: absolute;
   top: 0;
   right: 0;
@@ -451,7 +451,7 @@ body {
   left: 0;
   margin: auto auto;
   transform-origin: center;
-  background: rgba(45, 181, 168, 0.05);
+  background: hsla(175, 75%, 50%, 0.1);
   border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
   pointer-events: none;
   animation: morph 20s linear infinite alternate, spin 25s linear infinite reverse;
@@ -472,12 +472,12 @@ body {
 }
 
 .md-bg-grad-primary {
-  background-color: rgba(37, 136, 126, 0.9);
+  background-color: hsla(174, 75%, 30%, 0.9);
   /* background: linear-gradient(0.3turn, rgba(11,172,139, .7), rgba(89,223,187, .9)); */
 }
 
 .md-bg-grad-lighter {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: hsla(0, 0%, 100%, 0.75);
 }
 
 /*
@@ -530,7 +530,7 @@ body {
 
 .u-main-pg_text {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 10px;
   padding: 20px 0 20px 0;
   font-weight: 300;
@@ -559,6 +559,20 @@ body {
   color: #35C9BA;
   box-shadow: 0 2px 12px rgba(45, 181, 168, .12), 0 7px 15px rgba(53, 201, 186, .24);
   text-decoration: none;
+}
+.contragents {
+  background-color: hsl(174, 50%, 40%);
+}
+.contragent_link {
+  flex-grow: 1;
+  color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.contragent_link:hover {
+  color: #ffffff;
 }
 
 /* main page } */
@@ -940,19 +954,19 @@ body {
 /*-- MEDIA QUERIES { --*/
 
 @media (max-width: 575.98px) {
-  
-  
+
+
 }
 
 @media (max-width: 767.98px) {
-    
+
   .u-main-pg_text,
   .c-arrow-title {
     font-size: 3.5vw;
     padding: 5px 0 5px 0;
     margin: 5px 0 5px 0;
   }
-  
+
   .u-title,
   .u-title-lighter,
   .u-title-lighter p,
@@ -989,7 +1003,7 @@ body {
   .article_biblio-list {
     padding-left: 15px;
   }
-  
+
 }
 
 @media (max-width: 991.98px) {
@@ -999,7 +1013,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    background-color: rgba(45, 181, 168, 0.1);
+    background-color: hsla(174, 60%, 44%, 0.1);
     border-radius: 5px;
   }
   .nav-item {
@@ -1008,7 +1022,7 @@ body {
   .u-nav-list_link {
     margin: 0;
   }
-  
+
   .footer_main {
     flex-direction: column;
   }
@@ -1016,61 +1030,27 @@ body {
   .footer_main_item {
     margin-bottom: 30px;
   }
-  
+
 }
 
 @media (max-width:  1199.98px) {
-  
-  
-  
+
+
+
 }
 
 /* extra-large display */
 @media (min-width: 1920px) {
 
-  
+
 }
 
 /*-- MEDIA QUERIES } --*/
 
-
-
-
-
-
-/*
- * [CODE STYLE]
- *
- * Multiline commentary
- *
- */
-
-/*------------------------------------*\
-    SECTION HEADER
-\*------------------------------------*/
-
-/*
-======================
-Section comment block
-======================
-*/
-
-/* Sub-section comment block
-   ========================================================================== */
-
-/**
- * Short description using Doxygen-style comment format
- *
- * The first sentence of the long description starts here and continues on this
- * line for a while finally concluding here at the end of this paragraph.
- *
- * The long description is ideal for more detailed explanations and
- * documentation. It can include example HTML, URLs, or any other information
- * that is deemed necessary or useful.
- *
- * @tag This is a tag named 'tag'
- *
- * TODO: This is a todo statement that describes an atomic task to be completed
- *   at a later date. It wraps after 80 characters and following lines are
- *   indented by 2 spaces.
- */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsla(175, 50%, 50%, 0.25);
+}

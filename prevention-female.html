@@ -330,72 +330,50 @@
           
           </div>
         </div>
-      </main>
 
-      <footer class="u-footer">
-        <section class="footer_main d-flex justify-content-around">
-          <div class="footer_main_item d-flex flex-column">
-            <h5 class="footer_main_header">
-              Ссылки
-            </h5>
-            <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
-              ВолгГМУ
-            </a>
-            <a class="footer_main_link" href="https://www.rosminzdrav.ru/">
-              Минздрав РФ
-            </a>
-            <a class="footer_main_link" href="http://volgazdrav.ru/">
-              Минздрав по г. Вогограду
-            </a>
-            <a class="footer_main_link" href="https://vk.com/poslushaite_doktor">
-              "Послушайте, доктор!"
-            </a>
-          </div>
-          <div class="footer_main_item d-flex flex-column">
-            <h5 class="footer_main_header">
-              Информация
-            </h5>
-            <a class="footer_main_link" href="license.html">
-              Пользовательское соглашение
-            </a>
-          </div>
-          <div class="footer_main_item d-flex flex-column">
-            <h5 class="footer_main_header">
-              Copyright
-            </h5>
-            <p class="footer_main_text">2018-2019.
-              <a class="footer_main_link" href="https://www.volgmed.ru/ru/">
-                ВолгГМУ
-              </a>, <a class="footer_main_link" href="https://medexsys.com">
-                ООО "МЕДЭКСИС"
-              </a>
-            </p>
-          </div>
-        </section>
-        <section class="footer_copyright d-flex justify-content-end">
-          <a class="footer__copyright-item px-3" href="https://medexsys.com">
-            Разработано в <b>MedExSYS</b>
+    </main>
+
+    <footer class="u-footer">
+      <div class="footer_main d-flex justify-content-between container">
+        <div class="footer_main_item d-flex flex-column">
+          <h2 class="footer_main_header h5">
+            Информация
+          </h2>
+          <a class="footer_main_link" href="#">
+            Пользовательское соглашение
           </a>
-        </section>
-      </footer>
+        </div>
+        <div class="footer_main_item d-flex flex-column">
+          <h2 class="footer_main_header h5">
+            Copyright
+          </h2>
+          <p class="footer_main_text">2018-2019.
+            <a class="footer_main_link" href="https://www.volgmed.ru/ru/" target="_blank">
+              ВолгГМУ
+            </a>, <a class="footer_main_link" href="https://medexsys.com" target="_blank">ООО "МЕДЭКСИС"</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
-    </div><!-- /WRAPPER -->
+  </div><!-- /WRAPPER -->
 
-    <!-- SCRIPTS -->
-    <script src="static/js/main.js"></script>
+  <!-- SCRIPTS -->
+  <script src="static/js/main.js"></script>
 
-    <script type="text/javascript">
-      //плавная прокрутка по якорям
-      $(function() {
-        $("a[href^='#']").click(function() {
-          var _href = $(this).attr("href");
-          $("html, body").animate({
-            scrollTop: $(_href).offset().top + "px"
-          });
-          return false;
+  <script type="text/javascript">
+    //плавная прокрутка по якорям
+    $(function() {
+      $("a[href^='#']").click(function() {
+        var _href = $(this).attr("href");
+        $("html, body").animate({
+          scrollTop: $(_href).offset().top + "px"
         });
+        return false;
       });
-    </script>
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>
